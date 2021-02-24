@@ -1,0 +1,33 @@
+<button class="close" mat-button mat-dialog-close>X</button>
+
+<h1 mat-dialog-title class="table-header">Review Incoming Request</h1>
+<div>
+    <div class="row">
+        <div class="col-md-3"><b>Supplier</b></div>
+        <div class="col-md-3">{{data.supplier}}</div>
+        <div class="col-md-3"><b>Node Status</b></div>
+        <div class="col-md-3">{{data.nodeStatus}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"><b>Node</b></div>
+        <div class="col-md-3">{{data.node}}</div>
+        <div class="col-md-3"><b>Card Status</b></div>
+        <div class="col-md-3">{{data.cardStatus}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"><b>Card Port</b></div>
+        <div class="col-md-3">{{data.cardPort}}</div>
+        <div class="col-md-3"><b>Port Status</b></div>
+        <div class="col-md-3">{{data.portStatus}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"><b>Port Speed</b></div>
+        <div class="col-md-3">{{data.portSpeed}}</div>
+        <div class="col-md-3"><b>Requested On</b></div>
+        <div class="col-md-3">{{data.requestedOn}}</div>
+    </div>
+    <div mat-dialog-actions class="float-right">        
+        <button mat-raised-button>Reject</button>
+        <button mat-raised-button color color="primary">Approve</button>
+    </div>
+</div>
